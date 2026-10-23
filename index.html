@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>RM Móveis · Fibra sintética e corda náutica em Foz do Iguaçu</title>
+<meta name="description" content="Móveis em fibra sintética e corda náutica para varandas, áreas gourmet e jardins. Coleção e móveis planejados em Foz do Iguaçu.">
+<meta property="og:title" content="RM Móveis · Fabricamos para o seu espaço. Do seu jeito.">
+<meta property="og:description" content="Móveis em fibra sintética e corda náutica. Coleção e planejados em Foz do Iguaçu.">
+<meta property="og:image" content="assets/img/og.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/amsipro-light.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:"Amsi Pro";src:url(assets/fonts/amsipro-light.woff) format("woff");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Amsi Pro";src:url(assets/fonts/amsipro-lightitalic.woff) format("woff");font-weight:300;font-style:italic;font-display:swap}
+@font-face{font-family:"Amsi Pro";src:url(assets/fonts/amsipro-bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"Amsi Pro Cond";src:url(assets/fonts/amsiprocond-xlight.woff) format("woff");font-weight:200;font-style:normal;font-display:swap}
+
+:root{
+  --ink:#111111;
+  --paper:#ffffff;
+  --mist:#f5f5f3;
+  --muted:#6e6e6c;
+  --line:rgba(17,17,17,.14);
+  --pad:clamp(20px,5vw,56px);
+  --max:1180px;
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{font-family:"Amsi Pro",system-ui,sans-serif;font-weight:300;color:var(--ink);background:var(--paper);font-size:17px;line-height:1.6;letter-spacing:.01em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+em{font-style:italic}
+strong,b{font-weight:700}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+
+/* tipografia */
+.eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.display{font-family:"Amsi Pro Cond","Amsi Pro",sans-serif;font-weight:200;line-height:.95;letter-spacing:-.01em}
+h1,h2,h3{font-weight:300;line-height:1.12;letter-spacing:-.01em}
+h2{font-size:clamp(32px,5.4vw,56px)}
+h3{font-size:clamp(28px,4vw,40px)}
+.lead{font-size:clamp(17px,1.6vw,19px);color:#3b3b3a;max-width:34em}
+
+/* botões */
+.btn{display:inline-flex;align-items:center;gap:14px;padding:16px 26px;border:1px solid var(--ink);font-size:13px;letter-spacing:.2em;text-transform:uppercase;transition:background .35s var(--ease),color .35s var(--ease);min-height:52px}
+.btn .arr{display:inline-block;width:22px;height:1px;background:currentColor;position:relative;transition:width .35s var(--ease)}
+.btn .arr::after{content:"";position:absolute;right:0;top:-3px;width:7px;height:7px;border-top:1px solid currentColor;border-right:1px solid currentColor;transform:rotate(45deg)}
+.btn:hover .arr{width:32px}
+.btn-solid{background:var(--ink);color:var(--paper)}
+.btn-solid:hover{background:transparent;color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--paper)}
+.btn-light{border-color:#fff;color:#fff}
+.btn-light:hover{background:#fff;color:var(--ink)}
+.link{border-bottom:1px solid var(--line);padding-bottom:2px;transition:border-color .3s}
+.link:hover{border-color:var(--ink)}
+
+/* topo */
+.top{position:fixed;inset:0 0 auto;z-index:20;padding-top:env(safe-area-inset-top,0px);transition:background .4s,border-color .4s;border-bottom:1px solid transparent}
+.top.solid{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-color:var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+.top img{height:30px;width:auto}
+.top nav{display:flex;gap:26px;align-items:center;font-size:12px;letter-spacing:.22em;text-transform:uppercase}
+.top nav .hide-sm{display:none}
+@media(min-width:760px){.top nav .hide-sm{display:inline}}
+
+/* hero */
+.hero{position:relative;display:flex;flex-direction:column;background:var(--paper)}
+.hero-img{position:relative;order:2;aspect-ratio:4/5;overflow:hidden;background:var(--mist)}
+.hero-img img{width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.hero-copy{position:relative;padding:calc(68px + 36px) var(--pad) 44px;max-width:var(--max);margin:0 auto;width:100%}
+.hero h1{font-size:clamp(42px,11vw,104px);max-width:9.5em;margin-top:16px}
+.hero h1 em{display:block}
+.hero .eyebrow{letter-spacing:.22em}
+.hero p.sub{margin-top:22px;font-size:clamp(16px,2vw,19px);max-width:25em;color:#2c2c2b}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.hero .note{margin-top:16px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.scroll-cue{display:none}
+@media(min-width:960px){
+  .hero{flex-direction:row;align-items:stretch;min-height:100svh}
+  .hero-img{flex:0 0 46%;aspect-ratio:auto}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:100px var(--pad) 80px calc(max(var(--pad),(100vw - var(--max))/2 + var(--pad)));margin:0;flex:1}
+  .hero h1{font-size:clamp(56px,6.2vw,96px)}
+  .scroll-cue{display:block;position:absolute;left:27%;bottom:22px;width:1px;height:46px;background:rgba(17,17,17,.25);overflow:hidden}
+  .scroll-cue::after{content:"";position:absolute;left:0;top:-46px;width:1px;height:46px;background:var(--ink);animation:cue 2.4s var(--ease) infinite}
+}
+@keyframes cue{to{top:46px}}
+
+/* faixa 15 anos */
+.about{padding:clamp(80px,12vw,150px) 0}
+.about .wrap{display:grid;gap:28px;align-items:end}
+.about .num{display:flex;flex-direction:column;gap:14px}
+.about .num .big{font-size:clamp(120px,26vw,260px);line-height:1}
+.about .num small{font-size:13px;letter-spacing:.28em;text-transform:uppercase;line-height:1.4;color:var(--muted)}
+.about p{font-size:clamp(20px,2.6vw,28px);line-height:1.4;max-width:24em}
+@media(min-width:860px){.about .wrap{grid-template-columns:auto 1fr;gap:80px}}
+
+/* coleção */
+.collection{padding-bottom:clamp(60px,10vw,120px)}
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(40px,7vw,80px);padding-top:clamp(20px,4vw,40px);border-top:1px solid var(--line)}
+.sec-head .eyebrow{margin-top:18px}
+.product{display:grid;gap:28px;margin-bottom:clamp(72px,11vw,140px)}
+.product:last-child{margin-bottom:0}
+@media(min-width:900px){
+  .product{grid-template-columns:1.05fr 1fr;gap:clamp(48px,7vw,110px);align-items:center}
+  .product:nth-child(even) .gallery{order:2}
+}
+.gallery{position:relative;margin:0 calc(var(--pad) * -1)}
+@media(min-width:900px){.gallery{margin:0}}
+.track{position:relative;aspect-ratio:3/4;max-width:100%;overflow:hidden;background:var(--mist);touch-action:pan-y}
+.track img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .7s var(--ease)}
+.track img.on{opacity:1}
+.g-ui{display:flex;align-items:center;justify-content:space-between;padding:16px var(--pad) 0}
+@media(min-width:900px){.g-ui{padding:18px 0 0}}
+.count{font-size:12px;letter-spacing:.24em;color:var(--muted);font-variant-numeric:tabular-nums}
+.count b{font-weight:300;color:var(--ink)}
+.arrows{display:flex;gap:10px}
+.arrows button{width:50px;height:50px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;transition:border-color .3s,background .3s,color .3s}
+.arrows button:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.arrows button:disabled{opacity:.3;pointer-events:none}
+.arrows svg{width:18px;height:18px}
+.g-next-float{position:absolute;right:calc(var(--pad) - 4px);top:calc(50% - 50px);width:54px;height:54px;border-radius:50%;background:rgba(255,255,255,.9);display:grid;place-items:center;box-shadow:0 6px 24px rgba(0,0,0,.08);transition:opacity .4s,transform .4s var(--ease)}
+.g-next-float svg{width:20px;height:20px}
+.g-next-float.gone{opacity:0;transform:translateX(10px);pointer-events:none}
+@media(min-width:900px){.g-next-float{right:18px}}
+.product .idx{font-size:12px;letter-spacing:.28em;color:var(--muted);text-transform:uppercase}
+.product h3{margin:12px 0 18px}
+.product p{color:#3b3b3a;max-width:28em}
+.product .tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 30px}
+.product .tags span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;border:1px solid var(--line);padding:7px 12px;border-radius:40px;color:#4a4a49}
+
+/* planejados */
+.custom{background:var(--ink);color:#fff;padding:clamp(80px,12vw,150px) 0}
+.custom .wrap{display:grid;gap:clamp(40px,6vw,90px)}
+@media(min-width:900px){.custom .wrap{grid-template-columns:.9fr 1.1fr;align-items:center}}
+.custom .eyebrow{color:rgba(255,255,255,.55)}
+.custom h2{margin:16px 0 22px}
+.custom .lead{color:rgba(255,255,255,.78)}
+.custom figure{position:relative}
+.custom figure img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.custom figcaption{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-top:14px}
+.steps{list-style:none;margin:38px 0 40px;border-top:1px solid rgba(255,255,255,.18)}
+.steps li{display:grid;grid-template-columns:56px 1fr;gap:8px;padding:22px 0;border-bottom:1px solid rgba(255,255,255,.18)}
+.steps .n{font-family:"Amsi Pro Cond",sans-serif;font-weight:200;font-size:30px;line-height:1;color:rgba(255,255,255,.6)}
+.steps strong{font-size:19px;display:block;margin-bottom:4px}
+.steps span{color:rgba(255,255,255,.7);font-size:16px}
+
+/* materiais */
+.materials{padding:clamp(80px,12vw,150px) 0}
+.mat-grid{display:grid;gap:0;margin-top:clamp(36px,6vw,64px);border-top:1px solid var(--line)}
+@media(min-width:800px){.mat-grid{grid-template-columns:1fr 1fr}.mat-grid article+article{border-left:1px solid var(--line);padding-left:clamp(32px,5vw,64px)}.mat-grid article:first-child{padding-right:clamp(32px,5vw,64px)}}
+.mat-grid article{padding:36px 0;border-bottom:1px solid var(--line)}
+.mat-grid h3{font-size:clamp(26px,3vw,34px);margin-bottom:12px}
+.mat-grid p{color:#3b3b3a;max-width:30em}
+
+/* faq */
+.faq{background:var(--mist);padding:clamp(80px,12vw,150px) 0}
+.faq .wrap{display:grid;gap:40px}
+@media(min-width:900px){.faq .wrap{grid-template-columns:.8fr 1.2fr;gap:90px}}
+.faq h2{margin-top:16px}
+details{border-bottom:1px solid var(--line)}
+details:first-of-type{border-top:1px solid var(--line)}
+summary{list-style:none;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px 0;font-size:clamp(18px,2vw,21px);cursor:pointer}
+summary::-webkit-details-marker{display:none}
+summary i{flex:0 0 18px;height:18px;position:relative}
+summary i::before,summary i::after{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:currentColor;transition:transform .35s var(--ease)}
+summary i::after{transform:rotate(90deg)}
+details[open] summary i::after{transform:rotate(0)}
+details p{padding:0 40px 26px 0;color:#3b3b3a;max-width:36em}
+
+/* fechamento */
+.closing{padding:clamp(90px,14vw,170px) 0;text-align:center}
+.closing h2{font-size:clamp(36px,6.4vw,72px);max-width:13em;margin:18px auto 22px}
+.closing .lead{margin:0 auto 36px}
+.closing .info{display:flex;flex-direction:column;gap:10px;align-items:center;margin-top:44px;font-size:15px;color:#3b3b3a}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:56px 0 calc(40px + env(safe-area-inset-bottom));font-size:13px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:22px;justify-content:space-between;align-items:center}
+footer img{height:34px;width:auto}
+footer nav{display:flex;flex-wrap:wrap;gap:22px;letter-spacing:.16em;text-transform:uppercase;font-size:11px}
+footer nav a:hover{color:#fff}
+footer .credit{width:100%;padding-top:22px;border-top:1px solid rgba(255,255,255,.12);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.4)}
+
+/* whatsapp flutuante */
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom));z-index:30;width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px rgba(0,0,0,.18);transition:transform .4s var(--ease),opacity .4s}
+.wa-float svg{width:26px;height:26px}
+.wa-float.hidden{opacity:0;transform:translateY(20px);pointer-events:none}
+
+/* animação de entrada */
+.js .reveal{transform:translateY(18px);transition:transform 1.1s var(--ease)}
+.js .reveal.in{transform:none}
+@media(prefers-reduced-motion:reduce){.js .reveal{transform:none;transition:none}.scroll-cue::after{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <a href="#inicio" aria-label="RM Móveis, início"><img src="assets/img/logo-rm-preto.png" alt="RM Móveis" width="135" height="100"></a>
+    <nav aria-label="Menu">
+      <a href="#colecao" class="hide-sm">Coleção</a>
+      <a href="#planejados" class="hide-sm">Planejados</a>
+      <a href="#" class="js-wa" data-msg="Olá, RM! Vim pelo site e gostaria de mais informações.">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <section class="hero">
+    <div class="hero-img"><img src="assets/img/napolis-4.webp" alt="Conjunto Napolis em corda náutica com estofado cinza e mesa de centro com tampo de madeira" width="900" height="1200" fetchpriority="high"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">Fibra sintética &amp; corda náutica</p>
+      <h1>Fabricamos para o seu espaço. <em>Do seu jeito.</em></h1>
+      <p class="sub">Móveis em <strong>fibra sintética e corda náutica</strong> para varandas, áreas gourmet e jardins. São peças pensadas para receber bem, durar muito e combinar com a sua casa.</p>
+      <div class="actions">
+        <a href="#colecao" class="btn btn-solid">Ver a coleção <span class="arr"></span></a>
+        <a href="#" class="btn btn-line js-wa" data-msg="Olá, RM! Vim pelo site e gostaria de mais informações.">Falar no WhatsApp</a>
+      </div>
+      <p class="note">Atendimento em Foz do Iguaçu</p>
+    </div>
+    <span class="scroll-cue" aria-hidden="true"></span>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <div class="num reveal"><span class="big display">15</span><small>anos de fábrica</small></div>
+      <p class="reveal">A RM não faz de tudo. Há 15 anos ela faz <strong>uma coisa só</strong>: móveis em fibra sintética e corda náutica. Esse foco aparece em cada trama, cada acabamento e cada encaixe.</p>
+    </div>
+  </section>
+
+  <section class="collection" id="colecao">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Coleção</p>
+        <h2>Nossos <strong>modelos</strong></h2>
+        <p class="lead">Três conjuntos que mostram o que a gente faz de melhor. Toque nas setas para ver cada um de outros ângulos.</p>
+      </div>
+
+      <article class="product">
+        <div class="gallery reveal" data-gallery>
+          <div class="track">
+            <img src="assets/img/carina-1.webp" alt="Mesa Carina com quatro cadeiras em sala clara" width="900" height="1200">
+            <img src="assets/img/carina-2.webp" alt="Mesa Carina vista de lado, detalhe das cadeiras trançadas" width="900" height="1200" loading="lazy">
+            <img src="assets/img/carina-3.webp" alt="Mesa Carina vista de cima, tampo de vidro redondo" width="900" height="1200" loading="lazy">
+          </div>
+          <button class="g-next-float" data-next aria-label="Ver próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          <div class="g-ui">
+            <span class="count"><b data-cur>01</b> / <span data-tot>03</span></span>
+            <div class="arrows">
+              <button data-prev aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+              <button data-next aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="idx">01 · Jantar</p>
+          <h3>Mesa Carina</h3>
+          <p>Tampo de vidro redondo, base trançada e quatro cadeiras com braço. É um conjunto de jantar leve, que deixa o ambiente respirar e chama todo mundo para a mesa.</p>
+          <div class="tags"><span>Fibra sintética</span><span>Tampo de vidro</span><span>4 cadeiras</span></div>
+          <a href="#" class="btn btn-line js-wa" data-msg="Olá, RM! Vi a Mesa Carina no site e gostaria de mais informações.">Quero a Mesa Carina <span class="arr"></span></a>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="gallery reveal" data-gallery>
+          <div class="track">
+            <img src="assets/img/hotel-1.webp" alt="Conjunto Hotel completo: sofá, duas poltronas e mesa de centro" width="900" height="1200" loading="lazy">
+            <img src="assets/img/hotel-2.webp" alt="Mesa de centro trançada do Conjunto Hotel em frente ao sofá azul" width="900" height="1200" loading="lazy">
+            <img src="assets/img/hotel-3.webp" alt="Conjunto Hotel visto de cima" width="900" height="1200" loading="lazy">
+            <img src="assets/img/hotel-4.webp" alt="Detalhe do estofado azul-marinho e almofada listrada" width="900" height="1200" loading="lazy">
+          </div>
+          <button class="g-next-float" data-next aria-label="Ver próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          <div class="g-ui">
+            <span class="count"><b data-cur>01</b> / <span data-tot>04</span></span>
+            <div class="arrows">
+              <button data-prev aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+              <button data-next aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="idx">02 · Estar</p>
+          <h3>Conjunto Hotel</h3>
+          <p>Sofá, duas poltronas e mesa de centro envolvidos em corda náutica, com estofado azul-marinho. Tem aquele clima de férias, só que todo dia, na sua casa.</p>
+          <div class="tags"><span>Corda náutica</span><span>Sofá + 2 poltronas</span><span>Mesa de centro</span></div>
+          <a href="#" class="btn btn-line js-wa" data-msg="Olá, RM! Vi o Conjunto Hotel no site e gostaria de mais informações.">Quero o Conjunto Hotel <span class="arr"></span></a>
+        </div>
+      </article>
+
+      <article class="product">
+        <div class="gallery reveal" data-gallery>
+          <div class="track">
+            <img src="assets/img/napolis-1.webp" alt="Conjunto Napolis completo em sala clara" width="900" height="1200" loading="lazy">
+            <img src="assets/img/napolis-2.webp" alt="Poltronas do Conjunto Napolis com trama de corda" width="900" height="1200" loading="lazy">
+            <img src="assets/img/napolis-3.webp" alt="Conjunto Napolis em fundo neutro" width="900" height="1200" loading="lazy">
+            <img src="assets/img/napolis-4.webp" alt="Detalhe do Conjunto Napolis com mesa de tampo de madeira" width="900" height="1200" loading="lazy">
+          </div>
+          <button class="g-next-float" data-next aria-label="Ver próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+          <div class="g-ui">
+            <span class="count"><b data-cur>01</b> / <span data-tot>04</span></span>
+            <div class="arrows">
+              <button data-prev aria-label="Foto anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M20 12H4M10 6l-6 6 6 6"/></svg></button>
+              <button data-next aria-label="Próxima foto"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M4 12h16M14 6l6 6-6 6"/></svg></button>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="idx">03 · Estar</p>
+          <h3>Conjunto Napolis</h3>
+          <p>Linhas retas, corda em tom areia e estofado cinza. A mesa de centro com tampo de madeira fecha o conjunto com um toque quente. É discreto, elegante e fácil de combinar.</p>
+          <div class="tags"><span>Corda náutica</span><span>Sofá + 2 poltronas</span><span>Tampo de madeira</span></div>
+          <a href="#" class="btn btn-line js-wa" data-msg="Olá, RM! Vi o Conjunto Napolis no site e gostaria de mais informações.">Quero o Conjunto Napolis <span class="arr"></span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="custom" id="planejados">
+    <div class="wrap">
+      <figure class="reveal">
+        <img src="assets/img/detalhe-corda.webp" alt="Detalhe da trama de corda náutica no encosto de uma cadeira" width="900" height="1200" loading="lazy">
+        <figcaption>Detalhe de acabamento em corda náutica</figcaption>
+      </figure>
+      <div class="reveal">
+        <p class="eyebrow">Móveis planejados</p>
+        <h2>Não achou a medida certa? <strong>A gente faz.</strong></h2>
+        <p class="lead">Além da coleção, a RM fabrica móveis planejados. <strong>Você escolhe a medida e o material</strong>, e a peça nasce pensada para o seu espaço, seja uma varanda pequena ou um jardim inteiro. Tudo é conversado com calma, direto com a gente.</p>
+        <ol class="steps">
+          <li><span class="n">01</span><div><strong>Conversa</strong><span>Você conta como é o espaço e o que imagina para ele.</span></div></li>
+          <li><span class="n">02</span><div><strong>Medida e material</strong><span>Definimos juntos o tamanho e se a peça será em fibra sintética ou corda náutica.</span></div></li>
+          <li><span class="n">03</span><div><strong>Fabricação</strong><span>A peça é produzida do seu jeito, para o seu lugar.</span></div></li>
+        </ol>
+        <a href="#" class="btn btn-light js-wa" data-msg="Olá, RM! Vim pelo site e gostaria de fazer um móvel planejado.">Quero um móvel planejado <span class="arr"></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="materials">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Os dois materiais</p>
+        <h2 style="margin-top:16px">Por que <strong>fibra sintética</strong> e <strong>corda náutica</strong>?</h2>
+      </div>
+      <div class="mat-grid">
+        <article class="reveal">
+          <h3>Fibra sintética</h3>
+          <p>Tem a beleza da fibra natural, mas foi feita para área externa. Aguenta sol e chuva muito melhor e não pede troca a cada verão.</p>
+        </article>
+        <article class="reveal">
+          <h3>Corda náutica</h3>
+          <p>Nasceu no mar, onde precisa resistir à água e ao sol o tempo todo. No móvel, traz um toque macio e uma trama que chama atenção.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq" id="duvidas">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="eyebrow">Dúvidas frequentes</p>
+        <h2>Antes de escolher a sua peça</h2>
+      </div>
+      <div class="reveal">
+        <details>
+          <summary>Estraga rápido?<i aria-hidden="true"></i></summary>
+          <p>Não. Fibra sintética e corda náutica são materiais pensados para ficar em área externa, e são os únicos com que a RM trabalha há 15 anos. Com cuidados simples, a peça acompanha a sua casa por muitos anos.</p>
+        </details>
+        <details>
+          <summary>Como limpa?<i aria-hidden="true"></i></summary>
+          <p>Na trama, use pano úmido com água e sabão neutro e deixe secar à sombra. Evite cloro, solventes e esponjas ásperas. Para os estofados, a gente explica o cuidado certo de acordo com o tecido.</p>
+        </details>
+        <details>
+          <summary>Posso escolher medida e material?<i aria-hidden="true"></i></summary>
+          <p>Pode. Nos planejados, você escolhe os dois, e o resto a gente combina pelo WhatsApp.</p>
+        </details>
+        <details>
+          <summary>Vocês entregam fora de Foz?<i aria-hidden="true"></i></summary>
+          <p>Por enquanto, a RM atende somente Foz do Iguaçu.</p>
+        </details>
+        <details>
+          <summary>Quanto custa e qual o prazo?<i aria-hidden="true"></i></summary>
+          <p>Cada projeto é único, então valores e prazos são passados no atendimento, de forma individual.</p>
+        </details>
+        <details>
+          <summary>Posso ver pessoalmente?<i aria-hidden="true"></i></summary>
+          <p>Pode. A RM fica na Rua Guarujá, em Foz do Iguaçu. Chame no WhatsApp antes para combinar a sua visita.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="wrap reveal">
+      <p class="eyebrow">Vamos conversar</p>
+      <h2>Seu espaço merece uma peça <strong>pensada para ele.</strong></h2>
+      <p class="lead">Conte para a gente onde o móvel vai ficar e o que você imagina. A conversa é <strong>sem compromisso</strong>, e é assim que todo projeto da RM começa.</p>
+      <a href="#" class="btn btn-solid js-wa" data-msg="Olá, RM! Vim pelo site e gostaria de conversar sobre um móvel.">Conversar no WhatsApp <span class="arr"></span></a>
+      <div class="info">
+        <a class="link" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Guaruj%C3%A1%2C+Foz+do+Igua%C3%A7u+-+PR%2C+85869-720" target="_blank" rel="noopener">Rua Guarujá, Foz do Iguaçu, PR · 85869-720</a>
+        <a class="link" href="https://www.instagram.com/rmmoveisemfibra/" target="_blank" rel="noopener">@rmmoveisemfibra</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="assets/img/logo-rm-branco.png" alt="RM Móveis" width="135" height="100">
+    <nav aria-label="Rodapé">
+      <a href="#colecao">Coleção</a>
+      <a href="#planejados">Planejados</a>
+      <a href="https://www.instagram.com/rmmoveisemfibra/" target="_blank" rel="noopener">Instagram</a>
+      <a href="#" class="js-wa" data-msg="Olá, RM! Vim pelo site e gostaria de mais informações.">WhatsApp</a>
+    </nav>
+    <p class="credit">© <span id="y">2026</span> RM Móveis · Site por <a href="https://www.instagram.com/impulse.criatiivo/" target="_blank" rel="noopener">Impulse Criativo</a></p>
+  </div>
+</footer>
+
+<a href="#" class="wa-float hidden js-wa" data-msg="Olá, RM! Vim pelo site e gostaria de mais informações." aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91C21.95 6.45 17.5 2 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 4.54 0 8.24 3.7 8.24 8.24 0 4.55-3.7 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+</a>
+
+<script>
+/* ====== Número do WhatsApp: troque só aqui (55 + DDD + número) ====== */
+var WHATSAPP = "554198203047";
+
+document.documentElement.classList.add("js");
+document.querySelectorAll(".js-wa").forEach(function(a){
+  a.href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(a.dataset.msg || "Olá, RM!");
+  a.target = "_blank"; a.rel = "noopener";
+});
+document.getElementById("y").textContent = new Date().getFullYear();
+
+/* topo e botão flutuante */
+var top_ = document.getElementById("top"), fab = document.querySelector(".wa-float");
+function onScroll(){
+  var y = window.scrollY;
+  top_.classList.toggle("solid", y > 40);
+  fab.classList.toggle("hidden", y < window.innerHeight * .8);
+}
+window.addEventListener("scroll", onScroll, {passive:true}); onScroll();
+
+/* galerias com setas (troca suave de foto) */
+document.querySelectorAll("[data-gallery]").forEach(function(g){
+  var track = g.querySelector(".track"), imgs = track.querySelectorAll("img"),
+      cur = g.querySelector("[data-cur]"), prev = g.querySelector("[data-prev]"),
+      nexts = g.querySelectorAll("[data-next]"), floatBtn = g.querySelector(".g-next-float"),
+      total = imgs.length, i = 0;
+  function pad(n){ return (n < 10 ? "0" : "") + n; }
+  function go(n){
+    i = Math.max(0, Math.min(total - 1, n));
+    imgs.forEach(function(im, k){ im.classList.toggle("on", k === i); if (k === i + 1) im.loading = "eager"; });
+    cur.textContent = pad(i + 1);
+    prev.disabled = i === 0;
+    nexts.forEach(function(b){ if(!b.classList.contains("g-next-float")) b.disabled = i === total - 1; });
+    floatBtn.classList.toggle("gone", i === total - 1);
+  }
+  prev.addEventListener("click", function(){ go(i - 1); });
+  nexts.forEach(function(b){ b.addEventListener("click", function(){ go(i + 1); }); });
+  var x0 = null;
+  track.addEventListener("touchstart", function(e){ x0 = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener("touchend", function(e){
+    if (x0 === null) return; var dx = e.changedTouches[0].clientX - x0; x0 = null;
+    if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1));
+  });
+  go(0);
+});
+
+/* entrada suave */
+if ("IntersectionObserver" in window) {
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target); } });
+  }, {threshold:.12, rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".reveal").forEach(function(el){ io.observe(el); });
+} else {
+  document.querySelectorAll(".reveal").forEach(function(el){ el.classList.add("in"); });
+}
+</script>
+</body>
+</html>
